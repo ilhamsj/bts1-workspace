@@ -1,0 +1,20 @@
+services:
+
+  joy:
+    image: nginx:latest
+    container_name: joy
+    ports:
+      - 80:80
+    volumes:
+      - ./default.conf:/etc/nginx/conf.d/default.conf
+      - ${DIR}/futurie.webflow.io/futurie.webflow.io:/usr/share/nginx/html
+      - ${DIR}/futurie.webflow.io/cdn.prod.website-files.com:/cdn
+      - ${DIR}/futurie.webflow.io/d3e54v103j8qbb.cloudfront.net:/cloudfront
+
+  prettier:
+    image: node:latest
+    container_name: prettier
+    command: tail -f /dev/null
+    working_dir: /root/futurie.webflow.io
+    volumes:
+      - ${DIR}/futurie.webflow.io:/root/futurie.webflow.io
