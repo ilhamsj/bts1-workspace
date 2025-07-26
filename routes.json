@@ -12,5 +12,19 @@
         "page": "about.html",
         "description": "Learn more about our mission and values at BTS1. We provide quality early childhood education with experienced teachers and engaging learning methods.",
         "data_wf_page": "67924c6f84a3338774896cb6"
+    },
+    {
+        "path": "/contact",
+        "title": "Contact - BTS1 Les Calistung",
+        "page": "contact.html",
+        "description": "Reach out to us using the info below.",
+        "data_wf_page": "67924c6f84a3338774896cb7"
+    },
+    {
+        "path": "/blog",
+        "title": "Blog - BTS1 Les Calistung",
+        "page": "blog.html",
+        "description": "Read our latest blog posts about early childhood education and parenting tips.",
+        "data_wf_page": "67924c6f84a3338774896cc4"
     }
 ]
