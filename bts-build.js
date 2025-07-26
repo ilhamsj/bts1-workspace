@@ -4,7 +4,7 @@ const path = require("path");
 
 nunjucks.configure("src", { autoescape: true });
 
-const pages = ["index", "about", "contact"];
+const pages = ["index", "about"];
 
 for (const page of pages) {
   const rendered = nunjucks.render(`${page}.html`, {
