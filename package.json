@@ -21,6 +21,7 @@
   "homepage": "https://github.com/ilhamsj/bts1-workspace#readme",
   "dependencies": {
     "express": "^5.1.0",
-    "nunjucks": "^3.2.4"
+    "nunjucks": "^3.2.4",
+    "vercel": "^44.6.3"
   }
 }
