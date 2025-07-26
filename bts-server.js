@@ -1,7 +1,7 @@
 const express = require("express");
 const nunjucks = require("nunjucks");
 const app = express();
-const PORT = 3000;
+const PORT = process.env.PORT || 3000;
 
 const routes = require("./routes.json");
 
@@ -19,4 +19,12 @@ routes.forEach((route) => {
   });
 });
 
+// For Vercel deployment
 module.exports = app;
+
+// For local development
+if (process.env.NODE_ENV !== "production") {
+  app.listen(PORT, () => {
+    console.log(`Server is running on port ${PORT}`);
+  });
+}
