@@ -1,0 +1,15 @@
+<div data-w-id="39162e70-cc3b-1312-e9dc-1771aa5f92f8" class="w-layout-grid card-component-grid">
+  {% for program in programs %}
+  <div id="w-node-_39162e70-cc3b-1312-e9dc-1771aa5f92f9-62e0f197" class="card-content-block _0{{ loop.index }}">
+    <div class="card-content">
+      <div class="w-layout-grid card-inner-grid">
+        <div id="w-node-_39162e70-cc3b-1312-e9dc-1771aa5f92fe-62e0f197" class="card-top-content">
+          <img src="{{ program.image }}" loading="lazy" alt="Icon - Be the Smart One" class="card-icon" />
+          <h2 class="card-title">{{ program.title }}</h2>
+        </div>
+        <div id="w-node-_39162e70-cc3b-1312-e9dc-1771aa5f9301-62e0f197" class="text-size-regular">{{ program.description }}</div>
+      </div>
+    </div>
+  </div>
+  {% endfor %}
+</div>
