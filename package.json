@@ -1,0 +1,26 @@
+{
+  "name": "joy",
+  "version": "1.0.0",
+  "description": "magick futurie.webflow.io/futurie.webflow.io/images/02/anya.png -resize 200x200^ -gravity center -extent 200x200 images/anya.webp magick futurie.webflow.io/futurie.webflow.io/images/02/athan.jpeg -resize 200x200^ -gravity center -extent 200x200 images/athan.webp magick futurie.webflow.io/futurie.webflow.io/images/02/aufar.jpeg -resize 200x200^ -gravity center -extent 200x200 images/aufar.webp magick futurie.webflow.io/futurie.webflow.io/images/02/sanum.png -resize 200x200^ -gravity center -extent 200x200 images/sanum.webp magick futurie.webflow.io/futurie.webflow.io/images/02/taqy.jpeg -resize 200x200^ -gravity center -extent 200x200 images/taqy.webp",
+  "main": "bts-server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node bts-server.js",
+    "dev": "node --watch --watch-path=src --watch-path=public bts-server.js",
+    "build": "node bts-build.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ilhamsj/bts1-workspace.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ilhamsj/bts1-workspace/issues"
+  },
+  "homepage": "https://github.com/ilhamsj/bts1-workspace#readme",
+  "dependencies": {
+    "express": "^5.1.0",
+    "nunjucks": "^3.2.4"
+  }
+}
