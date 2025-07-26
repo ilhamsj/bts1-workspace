@@ -21,9 +21,7 @@ for (const route of routes) {
   console.log(`Building ${templateName} -> ${outputPath}`);
 
   const rendered = nunjucks.render(templateName, {
-    title: route.title,
-    description: route.description,
-    data_wf_page: route.data_wf_page,
+    ...route,
     current_path: route.path,
   });
 
