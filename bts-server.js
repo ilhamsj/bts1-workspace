@@ -4,6 +4,7 @@ const app = express();
 const PORT = process.env.PORT || 3000;
 
 const routes = require("./routes.json");
+const info = require("./info.json");
 
 nunjucks.configure("src", {
   autoescape: true,
@@ -15,7 +16,11 @@ app.use(express.static("public")); // for CSS/images
 // Routes
 routes.forEach((route) => {
   app.get(route.path, (req, res) => {
-    res.render(route.page, route);
+    res.render(route.page, {
+      ...route,
+      ...info,
+      current_path: route.path,
+    });
   });
 });
 

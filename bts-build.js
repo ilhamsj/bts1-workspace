@@ -6,6 +6,7 @@ nunjucks.configure("src", { autoescape: true });
 
 // Read routes configuration
 const routes = JSON.parse(fs.readFileSync("routes.json", "utf8"));
+const info = JSON.parse(fs.readFileSync("info.json", "utf8"));
 
 // Ensure public directory exists
 if (!fs.existsSync("public")) {
@@ -22,6 +23,7 @@ for (const route of routes) {
 
   const rendered = nunjucks.render(templateName, {
     ...route,
+    ...info,
     current_path: route.path,
   });
 

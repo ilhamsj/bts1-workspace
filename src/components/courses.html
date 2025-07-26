@@ -1,0 +1,21 @@
+<div id="w-node-_68b45a98-4cc4-7376-36f9-29582fac1a9f-62e0f197" class="programs-list">
+  {% for courses in courses %}
+  <div class="programs-row">
+    <div id="w-node-_68b45a98-4cc4-7376-36f9-29582fac1aa1-62e0f197" class="programs-image-wrapper">
+      <div class="image-wrapper">
+        <img src="{{ courses.image }}" loading="lazy" alt="BTS1 – Les Calistung Anak Usia Dini di Citra Maja City" class="cover-image" />
+      </div>
+    </div>
+    <div id="w-node-_68b45a98-4cc4-7376-36f9-29582fac1aa3-62e0f197" class="timeline-circle-wrapper">
+      <div class="timeline-circle"></div>
+    </div>
+    <div id="w-node-_68b45a98-4cc4-7376-36f9-29582fac1aa6-62e0f197" class="program-content-item {% if loop.index % 2 == 0 %}is-left{% endif %}">
+      <h3 class="program-number">{{ courses.title }}</h3>
+      <div class="spacer-small"></div>
+      <h4 class="program-subtitle">{{ courses.subtitle }}</h4>
+      <div class="spacer-small"></div>
+      <p class="text-size-regular">{{ courses.description }}</p>
+    </div>
+  </div>
+  {% endfor %}
+</div>
