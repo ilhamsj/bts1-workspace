@@ -4,11 +4,30 @@ const path = require("path");
 
 nunjucks.configure("src", { autoescape: true });
 
-const pages = ["index", "about"];
+// Read routes configuration
+const routes = JSON.parse(fs.readFileSync("routes.json", "utf8"));
 
-for (const page of pages) {
-  const rendered = nunjucks.render(`${page}.html`, {
-    title: `${page.charAt(0).toUpperCase() + page.slice(1)} - My Website`,
-  });
-  fs.writeFileSync(path.join("dist", `${page}.html`), rendered);
+// Ensure dist directory exists
+if (!fs.existsSync("dist")) {
+  fs.mkdirSync("dist");
 }
+
+// Build each page from routes configuration
+for (const route of routes) {
+  const templateName = route.page;
+  const outputPath =
+    route.path === "/" ? "index.html" : `${route.path.slice(1)}.html`;
+
+  console.log(`Building ${templateName} -> ${outputPath}`);
+
+  const rendered = nunjucks.render(templateName, {
+    title: route.title,
+    description: route.description,
+    data_wf_page: route.data_wf_page,
+    current_path: route.path,
+  });
+
+  fs.writeFileSync(path.join("dist", outputPath), rendered);
+}
+
+console.log(`Built ${routes.length} pages successfully!`);
