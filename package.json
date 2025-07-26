@@ -22,8 +22,5 @@
   "dependencies": {
     "express": "^5.1.0",
     "nunjucks": "^3.2.4"
-  },
-  "devDependencies": {
-    "vercel": "^44.6.3"
   }
 }
