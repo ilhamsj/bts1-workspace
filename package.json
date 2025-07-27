@@ -7,7 +7,8 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node bts-server.js",
     "dev": "node --watch --watch-path=src --watch-path=public --watch-path=routes.json --watch-path=info.json bts-server.js",
-    "build": "node bts-build.js"
+    "build": "DESTINATION=public node bts-build.js",
+    "build:dev": "DESTINATION=dist node bts-build.js"
   },
   "repository": {
     "type": "git",
