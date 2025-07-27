@@ -17,7 +17,9 @@ services:
       - ./bts-build.js:/app/bts-build.js
       - ./bts-server.js:/app/bts-server.js
       - ./src:/app/src
-      - ./public:/app/public
+      - ./public/cdn.prod.website-files.com:/app/public/cdn.prod.website-files.com
+      - ./public/d3e54v103j8qbb.cloudfront.net:/app/public/d3e54v103j8qbb.cloudfront.net
+      - ./public/images:/app/public/images
       - ./routes.json:/app/routes.json
       - ./info.json:/app/info.json
       - ./package.json:/app/package.json
