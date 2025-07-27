@@ -1,14 +1,4 @@
 {
-    "hero": {
-        "images": [
-            "/images/03/sanum_ivwpg5.webp",
-            "/images/03/anya_ggpmyo.webp",
-            "/images/03/aish_dafuuh.webp",
-            "/images/03/taqy_ia5b29.jpeg",
-            "/images/03/aufar_ppu0nn.jpeg",
-            "/images/03/athan_vskgiu.jpeg"
-        ]
-    },
     "footer": {
         "images": [
             "/images/03/anya_ggpmyo.webp",
@@ -16,6 +6,32 @@
             "/images/03/taqy_ia5b29.jpeg",
             "/images/03/sanum_ivwpg5.webp",
             "/images/03/athan_vskgiu.jpeg"
+        ],
+        "links": [
+            {
+                "name": "Home",
+                "url": "/index.html"
+            },
+            {
+                "name": "About",
+                "url": "/about.html"
+            },
+            {
+                "name": "Teachers",
+                "url": "/teachers.html"
+            },
+            {
+                "name": "Pricing",
+                "url": "/pricing.html"
+            },
+            {
+                "name": "Blog",
+                "url": "/blog"
+            },
+            {
+                "name": "Contact",
+                "url": "/contact.html"
+            }
         ]
     }
 }

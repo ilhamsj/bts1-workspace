@@ -1,21 +1,39 @@
-<div id="w-node-_68b45a98-4cc4-7376-36f9-29582fac1a9f-62e0f197" class="programs-list">
-  {% for courses in courses %}
-  <div class="programs-row">
-    <div id="w-node-_68b45a98-4cc4-7376-36f9-29582fac1aa1-62e0f197" class="programs-image-wrapper">
-      <div class="image-wrapper">
-        <img src="{{ courses.image }}" loading="lazy" alt="BTS1 – Les Calistung Anak Usia Dini di Citra Maja City" class="cover-image" />
-      </div>
-    </div>
-    <div id="w-node-_68b45a98-4cc4-7376-36f9-29582fac1aa3-62e0f197" class="timeline-circle-wrapper">
-      <div class="timeline-circle"></div>
-    </div>
-    <div id="w-node-_68b45a98-4cc4-7376-36f9-29582fac1aa6-62e0f197" class="program-content-item {% if loop.index % 2 == 0 %}is-left{% endif %}">
-      <h3 class="program-number">{{ courses.title }}</h3>
-      <div class="spacer-small"></div>
-      <h4 class="program-subtitle">{{ courses.subtitle }}</h4>
-      <div class="spacer-small"></div>
-      <p class="text-size-regular">{{ courses.description }}</p>
+{% for course in courses %}
+<div class="programs-row">
+  {% if loop.index0 % 2 == 0 %}
+  <!-- Image on left, content on right (even index) -->
+  <div class="programs-image-wrapper" id="w-node-_68b45a98-4cc4-7376-36f9-29582fac1aa1-62e0f197">
+    <div class="image-wrapper">
+      <img src="{{ course.image }}" loading="lazy" alt="{{ course.title }} - BTS1" class="cover-image" />
     </div>
   </div>
-  {% endfor %}
+  <div class="timeline-circle-wrapper" id="w-node-_68b45a98-4cc4-7376-36f9-29582fac1aa3-62e0f197">
+    <div class="timeline-circle"></div>
+  </div>
+  <div class="program-content-item" id="w-node-_68b45a98-4cc4-7376-36f9-29582fac1aa6-62e0f197">
+    <h3 class="program-number">{{ course.title }}</h3>
+    <div class="spacer-small"></div>
+    <h4 class="program-subtitle">{{ course.subtitle }}</h4>
+    <div class="spacer-small"></div>
+    <p class="text-size-regular">{{ course.description }}</p>
+  </div>
+  {% else %}
+  <!-- Content on left, image on right (odd index) -->
+  <div class="program-content-item is-left" id="w-node-_68b45a98-4cc4-7376-36f9-29582fac1ab9-62e0f197">
+    <h3 class="program-number">{{ course.title }}</h3>
+    <div class="spacer-small"></div>
+    <h4 class="program-subtitle">{{ course.subtitle }}</h4>
+    <div class="spacer-small"></div>
+    <p class="text-size-regular">{{ course.description }}</p>
+  </div>
+  <div class="timeline-circle-wrapper" id="w-node-_68b45a98-4cc4-7376-36f9-29582fac1aca-62e0f197">
+    <div class="timeline-circle"></div>
+  </div>
+  <div class="programs-image-wrapper" id="w-node-_68b45a98-4cc4-7376-36f9-29582fac1acf-62e0f197">
+    <div class="image-wrapper">
+      <img src="{{ course.image }}" loading="lazy" alt="{{ course.title }} - BTS1" class="cover-image" />
+    </div>
+  </div>
+  {% endif %}
 </div>
+{% endfor %}

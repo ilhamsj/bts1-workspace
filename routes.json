@@ -6,6 +6,25 @@
         "description": "BTS1 (Be The Smart One) adalah tempat les calistung terpercaya untuk anak usia 3–7 tahun. Dengan metode menyenangkan dan guru berpengalaman, kami bantu anak belajar membaca, menulis, dan berhitung sejak dini.",
         "data_wf_page": "67937e3f04e46a3162e0f197",
         "og_image": "https://cdn.prod.website-files.com/67924c6f84a3338774896ca8/67a6aeee6a8eb6c185e817d9_open-graph-image.jpg",
+        "hero": {
+            "images": [
+                "/images/03/sanum_ivwpg5.webp",
+                "/images/03/anya_ggpmyo.webp",
+                "/images/03/aish_dafuuh.webp",
+                "/images/03/taqy_ia5b29.jpeg",
+                "/images/03/aufar_ppu0nn.jpeg",
+                "/images/03/athan_vskgiu.jpeg"
+            ]
+        },
+        "why_us": {
+            "image": "/images/teacher.webp",
+            "features": [
+                "Qualified and caring educators.",
+                "Small class sizes for personalized attention.",
+                "Secure, child-friendly facilities.",
+                "A balanced mix of academics, play, and social engagement."
+            ]
+        },
         "programs": [
             {
                 "image": "/cdn.prod.website-files.com/67924c6f84a3338774896ca8/67a4d282c49cf91a7d2bb0ab_icon-01.png",
@@ -28,30 +47,10 @@
                 "description": "Outdoor play, movement games, and fitness exercises help develop coordination, strength, and a love for active living."
             }
         ],
-        "testimonials": [
-            {
-                "name": "Jeny",
-                "quote": "My child, Athan, really enjoys the Calistung lessons at BTS. He gets to learn while playing with his friends, and the teachers are very patient in guiding the children.",
-                "role": "Full Time Mom",
-                "image": "/images/04/m_athan_hkxkvx.webp"
-            },
-            {
-                "name": "Racha",
-                "quote": "My daughter has shown a bit of confidence and ability while studying at BTS One. The teachers at BTS One are very patient in teaching overactive children 😀😀",
-                "role": "Notary public",
-                "image": "/images/04/m_sanum_hc8a4s.webp"
-            },
-            {
-                "name": "Indah",
-                "quote": "I was initially hesitant to enroll Arjuna at such a young age, but the teachers at BTS One have been incredibly patient. Now he’s able to follow lessons well and has shown great improvement.",
-                "role": "Full Time Mom",
-                "image": "/images/04/m_juna_ezvhcj.webp"
-            }
-        ],
         "courses": [
             {
                 "title": "Calistung for Toddlers (Ages 3–4)",
-                "image": "/cdn.prod.website-files.com/67924c6f84a3338774896ca8/67a560d7df1a27d6e6a476aa_Frame%209.png",
+                "image": "/images/02/521317409_713542828126893_8855636823706880874_n.jpeg",
                 "subtitle": "Early Introduction to Letters and Numbers Through Play",
                 "description": "Designed for younger learners, this program gently introduces the basics of reading and math through interactive storytelling, phonics songs, tracing lines and shapes, and sensory-based games. It helps toddlers become familiar with letters and numbers while developing fine motor skills and a love for learning."
             },
@@ -72,6 +71,26 @@
                 "image": "/cdn.prod.website-files.com/67924c6f84a3338774896ca8/67959d6f79f5325b87ef1789_Frame%206.png",
                 "subtitle": "Learn Coding the Fun and Visual Way",
                 "description": "In this class, children are introduced to the basics of programming using block-based coding platforms. They’ll create their own animations, games, or interactive stories while learning logic, sequencing, and creative thinking. This course empowers young learners to become confident digital creators."
+            }
+        ],
+        "testimonials": [
+            {
+                "name": "Jeny",
+                "quote": "My child, Athan, really enjoys the Calistung lessons at BTS. He gets to learn while playing with his friends, and the teachers are very patient in guiding the children.",
+                "role": "Full Time Mom",
+                "image": "/images/04/m_athan_hkxkvx.webp"
+            },
+            {
+                "name": "Racha",
+                "quote": "My daughter has shown a bit of confidence and ability while studying at BTS One. The teachers at BTS One are very patient in teaching overactive children 😀😀",
+                "role": "Notary public",
+                "image": "/images/04/m_sanum_hc8a4s.webp"
+            },
+            {
+                "name": "Indah",
+                "quote": "I was initially hesitant to enroll Arjuna at such a young age, but the teachers at BTS One have been incredibly patient. Now he’s able to follow lessons well and has shown great improvement.",
+                "role": "Full Time Mom",
+                "image": "/images/04/m_juna_ezvhcj.webp"
             }
         ]
     },
@@ -94,9 +113,17 @@
     {
         "path": "/blog",
         "title": "Blog - Be The Smart One (BTS1)",
-        "page": "blog.html",
+        "page": "blog/index.html",
         "description": "Read our latest blog posts about early childhood education and parenting tips.",
         "data_wf_page": "67924c6f84a3338774896cc4",
+        "og_image": "https://cdn.prod.website-files.com/67924c6f84a3338774896ca8/67a6aeee6a8eb6c185e817d9_open-graph-image.jpg"
+    },
+    {
+        "path": "/blog/the-importance-of-play-in-early-education",
+        "title": "Blog - Be The Smart One (BTS1)",
+        "page": "blog/the-importance-of-play-in-early-education.html",
+        "description": "Read our latest blog posts about early childhood education and parenting tips.",
+        "data_wf_page": "67924c6f84a3338774896cc3",
         "og_image": "https://cdn.prod.website-files.com/67924c6f84a3338774896ca8/67a6aeee6a8eb6c185e817d9_open-graph-image.jpg"
     }
 ]
