@@ -14,15 +14,15 @@
             },
             {
                 "name": "About",
-                "url": "/about.html"
+                "url": "#about"
             },
             {
                 "name": "Teachers",
-                "url": "/teachers.html"
+                "url": "#teachers"
             },
             {
                 "name": "Pricing",
-                "url": "/pricing.html"
+                "url": "#pricing"
             },
             {
                 "name": "Blog",
@@ -30,7 +30,7 @@
             },
             {
                 "name": "Contact",
-                "url": "/contact.html"
+                "url": "#contact"
             }
         ]
     }
