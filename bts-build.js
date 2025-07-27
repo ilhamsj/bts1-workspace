@@ -8,9 +8,9 @@ nunjucks.configure("src", { autoescape: true });
 const routes = JSON.parse(fs.readFileSync("routes.json", "utf8"));
 const info = JSON.parse(fs.readFileSync("info.json", "utf8"));
 
-// Ensure public directory exists
-if (!fs.existsSync("public")) {
-  fs.mkdirSync("public");
+// Ensure dist directory exists
+if (!fs.existsSync("dist")) {
+  fs.mkdirSync("dist");
 }
 
 // Build each page from routes configuration
@@ -23,7 +23,7 @@ for (const route of routes) {
     current_path: route.path,
   });
 
-  fs.writeFileSync(path.join("public", route.page), rendered);
+  fs.writeFileSync(path.join("dist", route.page), rendered);
 }
 
 console.log(`Built ${routes.length} pages successfully!`);

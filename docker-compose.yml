@@ -5,4 +5,7 @@ services:
     ports:
       - 80:80
     volumes:
-      - ./public:/usr/share/nginx/html
+      - ./dist:/usr/share/nginx/html
+      - ./public/cdn.prod.website-files.com:/usr/share/nginx/html/cdn.prod.website-files.com
+      - ./public/d3e54v103j8qbb.cloudfront.net:/usr/share/nginx/html/d3e54v103j8qbb.cloudfront.net
+      - ./public/images:/usr/share/nginx/html/images
