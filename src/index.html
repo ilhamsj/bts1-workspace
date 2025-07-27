@@ -157,22 +157,12 @@
             </div>
             <div class="spacer-large"></div>
             <div class="w-layout-grid why-us-content-grid">
+              {% for feature in why_us.features %}
               <div class="feature-item">
-                <img src="../cdn.prod.website-files.com/67924c6f84a3338774896ca8/67a4ffe90739d2001fe1693f_check-icon.svg" loading="lazy" alt="BTS1 - Be The Smart One" class="checkbox" />
-                <p class="text-size-regular">Qualified and caring educators.</p>
+                <img src="/cdn.prod.website-files.com/67924c6f84a3338774896ca8/67a4ffe90739d2001fe1693f_check-icon.svg" loading="lazy" alt="BTS1 - Be The Smart One" class="checkbox" />
+                <p class="text-size-regular">{{ feature }}</p>
               </div>
-              <div class="feature-item">
-                <img src="../cdn.prod.website-files.com/67924c6f84a3338774896ca8/67a4ffe90739d2001fe1693f_check-icon.svg" loading="lazy" alt="BTS1 - Be The Smart One" class="checkbox" />
-                <p class="text-size-regular">Small class sizes for personalized attention.</p>
-              </div>
-              <div class="feature-item">
-                <img src="../cdn.prod.website-files.com/67924c6f84a3338774896ca8/67a4ffe90739d2001fe1693f_check-icon.svg" loading="lazy" alt="BTS1 - Be The Smart One" class="checkbox" />
-                <p class="text-size-regular">Secure, child-friendly facilities.</p>
-              </div>
-              <div class="feature-item">
-                <img src="../cdn.prod.website-files.com/67924c6f84a3338774896ca8/67a4ffe90739d2001fe1693f_check-icon.svg" loading="lazy" alt="BTS1 - Be The Smart One" class="checkbox" />
-                <p class="text-size-regular">A balanced mix of academics, play, and social engagement.</p>
-              </div>
+              {% endfor %}
             </div>
             <div class="spacer-large"></div>
             <a href="https://wa.me/6289684247721?text=Halo%20BTS1%2C%20saya%20ingin%20tanya%20soal%20kelas%20calistung.%20Terima%20kasih!" data-w-id="5aaefb4b-079c-8019-0e08-5e1f1ee1ae05" class="main-button w-inline-block">

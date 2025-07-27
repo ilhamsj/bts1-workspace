@@ -6,6 +6,14 @@
         "description": "BTS1 (Be The Smart One) adalah tempat les calistung terpercaya untuk anak usia 3–7 tahun. Dengan metode menyenangkan dan guru berpengalaman, kami bantu anak belajar membaca, menulis, dan berhitung sejak dini.",
         "data_wf_page": "67937e3f04e46a3162e0f197",
         "og_image": "https://cdn.prod.website-files.com/67924c6f84a3338774896ca8/67a6aeee6a8eb6c185e817d9_open-graph-image.jpg",
+        "why_us": {
+            "features": [
+                "Qualified and caring educators.",
+                "Small class sizes for personalized attention.",
+                "Secure, child-friendly facilities.",
+                "A balanced mix of academics, play, and social engagement."
+            ]
+        },
         "programs": [
             {
                 "image": "/cdn.prod.website-files.com/67924c6f84a3338774896ca8/67a4d282c49cf91a7d2bb0ab_icon-01.png",
