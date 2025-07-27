@@ -15,19 +15,15 @@ if (!fs.existsSync("public")) {
 
 // Build each page from routes configuration
 for (const route of routes) {
-  const templateName = route.page;
-  const outputPath =
-    route.path === "/" ? "index.html" : `${route.path.slice(1)}.html`;
+  console.log(`Building ${route.page}`);
 
-  console.log(`Building ${templateName} -> ${outputPath}`);
-
-  const rendered = nunjucks.render(templateName, {
+  const rendered = nunjucks.render(route.page, {
     ...route,
     ...info,
     current_path: route.path,
   });
 
-  fs.writeFileSync(path.join("public", outputPath), rendered);
+  fs.writeFileSync(path.join("public", route.page), rendered);
 }
 
 console.log(`Built ${routes.length} pages successfully!`);
