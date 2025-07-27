@@ -10,7 +10,7 @@
         "links": [
             {
                 "name": "Home",
-                "url": "/index.html"
+                "url": "/"
             },
             {
                 "name": "About",
