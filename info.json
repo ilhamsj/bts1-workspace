@@ -6,10 +6,6 @@
         },
         "links": [
             {
-                "name": "Home",
-                "url": "/"
-            },
-            {
                 "name": "About",
                 "url": "#about"
             },
