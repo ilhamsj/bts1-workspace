@@ -1,0 +1,74 @@
+<div id="top" data-animation="default" data-collapse="medium" data-duration="0" data-easing="ease" data-easing2="ease" role="banner" class="navbar w-nav">
+  <div class="padding-global">
+    <div class="container-large">
+      <div class="navbar-wrapper">
+        <div class="w-layout-grid nav-component-grid">
+          <a href="/" id="w-node-_016c42d0-27ae-d0d7-3914-01d3df01ab5e-df01ab5a" data-w-id="016c42d0-27ae-d0d7-3914-01d3df01ab5e" aria-current="page" class="brand-link w-inline-block w--current">
+            <div class="logo-wrap">
+              <img src="/images/BTS1-2.svg" loading="lazy" class="logo" style="transform: translate3d(0px, 0%, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg); transform-style: preserve-3d" alt="Futurie - Futurie Webflow Template" />
+              <img src="/images/BTS1-2.svg" loading="lazy" class="alternate-logo" style="transform: translate3d(0px, 0%, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg); transform-style: preserve-3d" alt="Futurie - Futurie Webflow Template" />
+            </div>
+          </a>
+          <div id="w-node-f5c81dcc-214f-f758-4480-c94eedfeb270-df01ab5a" class="nav-menu-wrapper">
+            <div class="nav-background"></div>
+            <div class="cart-item">{% include "components/cart.njk" %}</div>
+            <nav role="navigation" id="w-node-_016c42d0-27ae-d0d7-3914-01d3df01ab64-df01ab5a" class="nav-menu w-nav-menu">
+              <div class="background-navbar"></div>
+              <div class="nav-menu-content">
+                {% for link in navbar.links %}
+                <div class="nav-link-overflow">
+                  <a data-w-id="016c42d0-27ae-d0d7-3914-01d3df01ab66" href="{{ link.url }}" class="nav-link w-inline-block">
+                    <div class="nav-text">{{ link.name }}</div>
+                    <div class="nav-text is-hover">{{ link.name }}</div>
+                  </a>
+                </div>
+                {% endfor %}
+
+                <div class="nav-button-overflow">
+                  <div class="nav-button-wrapper">
+                    <div class="button-wrapper">
+                      <a href="{{ navbar.button.url }}" data-w-id="6470b253-e246-7663-f093-6a3dd05099fe" class="main-button w-inline-block">
+                        <div class="w-layout-grid inner-button-grid">
+                          <div id="w-node-_6470b253-e246-7663-f093-6a3dd0509a00-df01ab5a" class="text-button-wrap">
+                            <div class="text-button" style="transform: translate3d(0px, 0%, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg); transform-style: preserve-3d">{{ navbar.button.text }}</div>
+                            <div class="text-button" style="transform: translate3d(0px, 0%, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg); transform-style: preserve-3d">{{ navbar.button.text }}</div>
+                          </div>
+                          <div class="inner-circle-button">
+                            <div class="arrow-button _01 w-embed" style="transform: translate3d(0rem, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(45deg) skew(0deg, 0deg); transform-style: preserve-3d">
+                              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+                                <path
+                                  d="M8.49816 20.0048H15.5018C14.8432 21.5842 13.5794 22.848 12 23.5066C10.4206 22.848 9.15679 21.5842 8.49816 20.0048ZM18 14.8095L20 17.0778V19.0048H4V17.0778L6 14.8095V9.00481C6 5.52156 8.50442 2.55825 12 1.46002C15.4956 2.55825 18 5.52156 18 9.00481V14.8095ZM12 11.0048C13.1046 11.0048 14 10.1094 14 9.00481C14 7.90024 13.1046 7.00481 12 7.00481C10.8954 7.00481 10 7.90024 10 9.00481C10 10.1094 10.8954 11.0048 12 11.0048Z"
+                                ></path>
+                              </svg>
+                            </div>
+                            <div class="arrow-button _02 w-embed" style="transform: translate3d(-1.5rem, 1.5rem, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(45deg) skew(0deg, 0deg); transform-style: preserve-3d">
+                              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+                                <path
+                                  d="M8.49816 20.0048H15.5018C14.8432 21.5842 13.5794 22.848 12 23.5066C10.4206 22.848 9.15679 21.5842 8.49816 20.0048ZM18 14.8095L20 17.0778V19.0048H4V17.0778L6 14.8095V9.00481C6 5.52156 8.50442 2.55825 12 1.46002C15.4956 2.55825 18 5.52156 18 9.00481V14.8095ZM12 11.0048C13.1046 11.0048 14 10.1094 14 9.00481C14 7.90024 13.1046 7.00481 12 7.00481C10.8954 7.00481 10 7.90024 10 9.00481C10 10.1094 10.8954 11.0048 12 11.0048Z"
+                                ></path>
+                              </svg>
+                            </div>
+                          </div>
+                        </div>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </nav>
+            <div id="w-node-_016c42d0-27ae-d0d7-3914-01d3df01ab7a-df01ab5a" data-w-id="016c42d0-27ae-d0d7-3914-01d3df01ab7a" class="menu-button w-nav-button" style="-webkit-user-select: text; user-select: text" aria-label="menu" role="button" tabindex="0" aria-controls="w-nav-overlay-0" aria-haspopup="menu" aria-expanded="false">
+              <div class="menu-wrapper">
+                <div class="menu-button-wrap">
+                  <div class="menu-line-item"><div class="menu-line top"></div></div>
+                  <div class="menu-line-item"><div class="menu-line middle"></div></div>
+                  <div class="menu-line-item"><div class="menu-line bottom"></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="w-nav-overlay" data-wf-ignore="" id="w-nav-overlay-0"></div>
+</div>
