@@ -44,25 +44,7 @@
     <link href="/images/icon.png" rel="apple-touch-icon" />
   </head>
   <body>
-    <div class="page-wrapper">
-      <div id="top" data-animation="default" data-collapse="medium" data-duration="0" data-easing="ease" data-easing2="ease" role="banner" class="navbar w-nav">
-        <div class="padding-global">
-          <div class="container-large">
-            <div class="navbar-wrapper">
-              <div class="w-layout-grid nav-component-grid">
-                <a href="/" id="w-node-_016c42d0-27ae-d0d7-3914-01d3df01ab5e-df01ab5a" data-w-id="016c42d0-27ae-d0d7-3914-01d3df01ab5e" aria-current="page" class="brand-link w-inline-block w--current">
-                  <div class="logo-wrap">
-                    <h1 class="text-size-medium">bts1</h1>
-                  </div>
-                </a>
-                <div id="w-node-f5c81dcc-214f-f758-4480-c94eedfeb270-df01ab5a" class="nav-menu-wrapper">
-                  <div class="nav-background"></div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
+      {% include "components/navbar.html" %}
 
       <main class="main-wrapper">{% block content %}{% endblock %}</main>
 
