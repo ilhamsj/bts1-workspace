@@ -20,7 +20,10 @@
         ]
     },
     "footer": {
-        "address": "Jl. Villa Kuta Indah 8, No. V.08/17, Cluster Kuta Indah, Citra Maja City",
+        "address": {
+            "link": "https://maps.app.goo.gl/HMWmjbA2hDcN6Ez97",
+            "name": "Jl. Villa Kuta Indah 8, No. V.08/17, Cluster Kuta Indah, Citra Maja City"
+        },
         "images": [
             "/images/03/anya_ggpmyo.webp",
             "/images/03/aufar_ppu0nn.jpeg",
